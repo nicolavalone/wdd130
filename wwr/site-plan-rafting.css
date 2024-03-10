@@ -38,6 +38,10 @@ header {
     font-family: var(--heading-font);
 }
 
+header h1 {
+    color: #FFFFFF;
+}
+
 p {
     padding-bottom: 20px;
 }
