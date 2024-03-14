@@ -102,7 +102,7 @@ p {
 .box {
     /* Set basic box model properties */
     margin: 1rem;
-    border: 1px solid rgba(rgb(255, 174, 0), rgb(73, 128, 0), rgb(0, 153, 255), alpha);
+    border: 1px solid rgba(red, green, blue, alpha);
     padding: 1rem;
     /* Add decorations */
     background-color: #ddd;
