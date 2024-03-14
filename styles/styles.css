@@ -38,6 +38,8 @@ aside {
     /* Add margin to create space between main content and aside */
     float: left;
     /* Float the aside to the left */
+    position: relative;
+    /* Add position property */
 }
 
 aside img {
@@ -95,7 +97,8 @@ p {
     padding: 0;
 }
 
-/* Class selectors */
+/* Class Selectors */
+
 .box {
     /* Set basic box model properties */
     margin: 1rem;
