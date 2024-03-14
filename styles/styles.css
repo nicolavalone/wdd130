@@ -1,9 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
     max-width: 840px;
+    margin: 0 auto;
+    /* Center the main content */
 }
 
 main img.rounded {
     border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
+    /* Set a maximum width */
+    max-height: 115px;
+    /* Set a maximum height */
+    width: auto;
+    height: auto;
 }
 
 a {
@@ -17,13 +33,11 @@ a:hover {
 
 aside {
     width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
     text-align: center;
-
+    margin-top: 20px;
+    /* Add margin to create space between main content and aside */
+    float: left;
+    /* Float the aside to the left */
 }
 
 aside img {
@@ -31,10 +45,27 @@ aside img {
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    /* Position the heading element absolutely */
+    top: 10px;
+    /* Adjust top positioning as needed */
+    left: 50%;
+    /* Center the heading horizontally */
+    transform: translateX(-50%);
+    /* Adjust for center alignment */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add background color with opacity */
+    padding: 10px;
+    border-radius: 5px;
+}
+
 footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
+    clear: both;
+    /* Clear the float to prevent overlapping with footer */
 }
 
 nav {
@@ -53,7 +84,7 @@ h1 {
 }
 
 main img {
-    width: 200px;
+    width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
@@ -62,4 +93,15 @@ main img {
 
 p {
     padding: 0;
+}
+
+/* Class selectors */
+.box {
+    /* Set basic box model properties */
+    margin: 1rem;
+    border: 1px solid rgba(rgb(255, 174, 0), rgb(73, 128, 0), rgb(0, 153, 255), alpha);
+    padding: 1rem;
+    /* Add decorations */
+    background-color: #ddd;
+    color: #000;
 }
