@@ -100,9 +100,8 @@ p {
 /* Class Selectors */
 
 .box {
-    /* Set basic box model properties */
     margin: 1rem;
-    border: 1px solid rgba(red, green, blue, alpha);
+    border: 1px solid rgba(255, 0, 0, 0.5);
     padding: 1rem;
     /* Add decorations */
     background-color: #ddd;
