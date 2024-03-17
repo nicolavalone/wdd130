@@ -91,6 +91,11 @@ body {
     /* Add shadow to the text */
 }
 
+.content article p {
+    opacity: 1.0;
+    /* Adjust opacity for improved readability */
+}
+
 .content article {
     display: flex;
     flex-direction: column;
@@ -123,24 +128,6 @@ body {
     z-index: 1;
 }
 
-.content article p {
-    opacity: 2.0;
-    /* Adjust opacity for improved readability */
-}
-
-.content article img {
-    width: 25%;
-    margin-right: 20px;
-    z-index: 2;
-}
-
-figcaption {
-    font-size: 14px;
-    color: #333;
-    /* Adjust color as needed */
-    text-align: left;
-    margin-top: 2px;
-}
 
 .sociallinks {
     display: flex;
