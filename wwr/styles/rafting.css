@@ -1,0 +1,134 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+/* Heading and paragraph styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+.content p {
+    color: white;
+    /* Change text color to white */
+    opacity: 0.9;
+    /* Adjust opacity for readability */
+}
+
+/* Remove underlines from social media links */
+footer a {
+    text-decoration: none;
+}
+
+/* Limit the entire width of the page */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style the Hero Container using Position Absolute */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    width: 70%;
+    /* Adjust width as needed */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    border-radius: 10px;
+    /* Add border radius for rounded corners */
+}
+
+.content h1 {
+    font-size: 3.0rem;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -220px;
+    left: 50%;
+    /* Adjusted to start from the left */
+    width: 131.5%;
+    /* Occupy the entire width */
+    transform: translateX(-50%);
+    z-index: 1;
+    color: rgb(242, 244, 247);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
+    /* Add shadow to the text */
+}
+
+.content article p {
+    opacity: 1.0;
+    /* Adjust opacity for improved readability */
+}
+
+
+.content article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content article img {
+    flex: 0 0 auto;
+    width: 30%;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sociallinks a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.sociallinks img {
+    width: 30px;
+    /* Adjust size as needed */
+    height: 30px;
+    /* Adjust size as needed */
+}
+
+footer p {
+    font-size: 0.8rem;
+    /* Adjust font size for smaller text */
+}
