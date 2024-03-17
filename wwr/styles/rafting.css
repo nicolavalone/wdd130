@@ -30,7 +30,6 @@ h6 {
 
 .content p {
     color: white;
-    /* Change text color to white */
     opacity: 0.9;
     /* Adjust opacity for readability */
 }
@@ -66,7 +65,6 @@ body {
     color: white;
     padding: 20px;
     width: 70%;
-    /* Adjust width as needed */
     background-color: rgba(0, 0, 0, 0.7);
     /* Semi-transparent background */
     border-radius: 10px;
@@ -88,12 +86,11 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
-    /* Add shadow to the text */
+
 }
 
 .content article p {
     opacity: 1.0;
-    /* Adjust opacity for improved readability */
 }
 
 .content article {
@@ -117,9 +114,7 @@ body {
 
 .content article .article-content p {
     opacity: 1.0;
-    /* Adjust opacity for improved readability */
     width: 70%;
-    /* Adjust as needed */
 }
 
 .content article .article-content img {
@@ -142,12 +137,10 @@ body {
 
 .sociallinks img {
     width: 30px;
-    /* Adjust size as needed */
     height: 30px;
-    /* Adjust size as needed */
+
 }
 
 footer p {
     font-size: 0.8rem;
-    /* Adjust font size for smaller text */
 }
