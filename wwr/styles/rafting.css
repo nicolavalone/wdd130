@@ -134,6 +134,14 @@ body {
     z-index: 2;
 }
 
+figcaption {
+    font-size: 14px;
+    color: #333;
+    /* Adjust color as needed */
+    text-align: left;
+    margin-top: 2px;
+}
+
 .sociallinks {
     display: flex;
     justify-content: center;
