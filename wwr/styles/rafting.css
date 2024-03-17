@@ -77,7 +77,7 @@ body {
     font-size: 3.0rem;
     margin-bottom: 20px;
     position: absolute;
-    top: -220px;
+    top: -200px;
     left: 50%;
     /* Adjusted to start from the left */
     width: 131.5%;
@@ -91,11 +91,16 @@ body {
     /* Add shadow to the text */
 }
 
-.content article p {
-    opacity: 1.0;
-    /* Adjust opacity for improved readability */
+.content article h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
+.content article p {
+    opacity: 2.0;
+    /* Adjust opacity for improved readability */
+}
 
 .content article {
     display: flex;
