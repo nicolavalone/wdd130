@@ -5,10 +5,10 @@
 }
 
 header,
-footer {
+footer,
+.grid {
     margin: 0 auto;
     max-width: 840px;
-    /* Added max-width */
 }
 
 .grid {
@@ -69,8 +69,8 @@ h2 {
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
 }
 
@@ -109,7 +109,7 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
-    padding: 2px;
+    padding: 1px;
     box-shadow: 0 0 30px gray;
 }
 
@@ -118,9 +118,9 @@ p {
 }
 
 .box {
-    margin: 5rem;
+    margin: 1rem;
     border: 2px solid rgba(255, 0, 0, 0.5);
-    padding: 2rem;
+    padding: 1rem;
     background-color: #ddd;
     color: #000;
 }
