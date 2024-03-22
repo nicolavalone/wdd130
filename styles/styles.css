@@ -4,20 +4,32 @@
     box-sizing: border-box;
 }
 
-main {
-    max-width: 840px;
+header,
+footer {
     margin: 0 auto;
+    /* Center the content */
+}
+
+main {
+    margin: 1rem;
+    grid-column: 2;
     /* Center the main content */
 }
 
+main {
+    display: block;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif
+}
+
 main img.rounded {
-    border-radius: 50%;
     float: right;
     margin-left: 20px;
-    max-width: 200px;
-    /* Set a maximum width */
-    max-height: 115px;
-    /* Set a maximum height */
+    max-width: 300px;
+    max-height: 150px;
     width: auto;
     height: auto;
 }
@@ -32,34 +44,35 @@ a:hover {
 }
 
 aside {
-    width: 20em;
-    text-align: center;
-    margin-top: 20px;
-    /* Add margin to create space between main content and aside */
-    float: left;
-    /* Float the aside to the left */
+    width: 20rem;
     position: relative;
-    /* Add position property */
+    grid-column: 1;
+    grid-row: 1;
 }
 
 aside img {
-    width: 200px;
+    width: 280px;
     height: auto;
 }
 
 aside h2 {
     position: absolute;
-    /* Position the heading element absolutely */
     top: 10px;
-    /* Adjust top positioning as needed */
     left: 50%;
-    /* Center the heading horizontally */
     transform: translateX(-50%);
-    /* Adjust for center alignment */
     background-color: rgba(255, 255, 255, 0.8);
-    /* Add background color with opacity */
     padding: 10px;
     border-radius: 5px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 footer {
@@ -67,22 +80,30 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
     clear: both;
-    /* Clear the float to prevent overlapping with footer */
 }
 
 nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: steelblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
 }
 
 h1 {
     color: steelblue;
+    border-bottom: 1px solid steelblue;
 }
 
 main img {
@@ -97,13 +118,17 @@ p {
     padding: 0;
 }
 
-/* Class Selectors */
-
 .box {
-    margin: 1rem;
-    border: 1px solid rgba(255, 0, 0, 0.5);
-    padding: 1rem;
-    /* Add decorations */
+    margin: 5rem;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    padding: 2rem;
     background-color: #ddd;
     color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    /* aside on the left, main on the right */
 }
