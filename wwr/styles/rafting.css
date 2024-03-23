@@ -41,7 +41,7 @@ footer a {
 
 /* Limit the entire width of the page */
 body {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -58,13 +58,13 @@ body {
 
 .content {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    padding: 20px;
-    width: 70%;
+    padding: 10px;
+    width: 90%;
     background-color: rgba(0, 0, 0, 0.7);
     /* Semi-transparent background */
     border-radius: 10px;
@@ -78,15 +78,14 @@ body {
     top: -220px;
     left: 50%;
     /* Adjusted to start from the left */
-    width: 131.5%;
+    width: 100%;
     /* Occupy the entire width */
     transform: translateX(-50%);
     z-index: 1;
-    color: rgb(242, 244, 247);
+    color: steelblue;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.3);
-
 }
 
 .content article p {
@@ -123,10 +122,10 @@ body {
     z-index: 1;
 }
 
-
 .sociallinks {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    /* Align icons to the right */
     margin-top: 20px;
 }
 
@@ -138,9 +137,123 @@ body {
 .sociallinks img {
     width: 30px;
     height: 30px;
-
 }
 
 footer p {
     font-size: 0.8rem;
+}
+
+/* New styling for dividing layout into 5 blocks */
+header {
+    grid-area: header;
+    background-color: steelblue;
+    padding: 10px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 200px 8fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+}
+
+/* Logo styles */
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+    color: steelblue;
+    /* Adjusted color */
+}
+
+/* Navigation styles */
+nav {
+    text-align: right;
+    /* Center align the navigation links */
+}
+
+/* Navigation list styles */
+.navigation {
+    display: flex;
+    /* Adjust display to inline-block */
+    list-style: none;
+}
+
+/* Navigation list item styles */
+.navigation li {
+    flex: 1 1 100%;
+}
+
+/* Navigation link styles */
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* Navigation link hover styles */
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* New styling for dividing layout into 5 blocks */
+main {
+    grid-area: main;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+section.history {
+    grid-area: history;
+    background-color: #c0c0c0;
+    padding: 20px;
+}
+
+/* CSS for Adventures section */
+section.images {
+    grid-area: images;
+    background-color: #a9a9a9;
+    padding: 20px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling if necessary */
+    white-space: nowrap;
+    /* Prevent wrapping to keep figures inline */
+}
+
+section.images figure {
+    margin: 0 10px;
+    /* Adjust spacing between figures */
+    display: inline-block;
+    /* Display figures horizontally */
+}
+
+section.images img {
+    width: 160px;
+    /* Adjust the width of the images */
+    height: auto;
+}
+
+section.images figcaption {
+    text-align: center;
+    /* Center align captions */
+    font-size: 0.8rem;
+    /* Adjust font size of captions */
+    margin-top: 5px;
+    /* Adjust spacing between image and caption */
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: #808080;
+    color: white;
+    padding: 10px;
 }
