@@ -7,107 +7,96 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     color: #333;
-    background: #fff;
-}
-
-header {
-    margin: auto;
-    width: 650px;
+    background-color: #f9f9f9;
 }
 
 h1 {
-    margin: 1rem;
-    font-size: 1.5em;
-    color: navy;
     text-align: center;
+    margin: 20px 0;
+    color: navy;
 }
 
 form {
-    width: 650;
-    margin: auto;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #eee;
-    display: grid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 fieldset {
-    display: grid;
-    grid-gap: .5rem;
-    margin: 1rem;
+    margin: 20px 0;
+    padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    border-radius: 5px;
 }
 
 legend {
-    padding: 0.5rem;
-    color: navy;
     font-size: 1.3rem;
-}
-
-label,
-input,
-button,
-select,
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
+    color: navy;
+    padding: 0.5rem;
 }
 
 label {
-    text-align: right;
-    padding-right: 1rem;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: navy;
 }
 
-input,
+input[type="text"],
+textarea,
 select,
-textarea {
-    padding: 0.5rem;
-    font-size: 1.1rem;
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 input[type="checkbox"] {
     width: 22px;
     height: 22px;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
-button {
-    margin: 1rem;
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
     background-color: navy;
-    color: #fff;
+    color: white;
     border: none;
-    border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
-button:hover {
-    background-color: darkgreen;
+button[type="submit"]:hover {
+    background-color: #004c8c;
+    color: #fff;
 }
 
-footer {
-    margin: 1rem auto 0;
-    width: 650px;
-    text-align: center;
-    font-size: 0.8rem;
-    color: #777;
-    border-top: 1px solid #ccc;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
+.column1,
 .column2 {
-    grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.column1 label,
+.column2 label,
+.column1 input,
+.column2 input,
+.column1 select,
+.column2 select,
+.column1 textarea,
+.column2 textarea {
+    width: calc(100% - 22px);
+    margin: 5px;
 }
