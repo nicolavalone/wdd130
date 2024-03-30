@@ -257,3 +257,75 @@ footer {
     color: white;
     padding: 10px;
 }
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    /* Set width for other input types */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form #email,
+.contact-form #purpose {
+    width: calc(50% - 5px);
+    /* Set specific width for email and purpose inputs */
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Employee Profile Styles */
+.employee-profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-profile img {
+    width: 150px;
+    /* Adjust the width as needed */
+    height: 150px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
