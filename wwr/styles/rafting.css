@@ -329,3 +329,89 @@ footer {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+/* Trips Page Styles */
+.trips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.trip {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trip img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.trip-content {
+    width: 60%;
+}
+
+.trip h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.trip p {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.trip .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip .details button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trip .details button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styles */
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Link to Trips page wireframe in footer */
+footer a#wireframe-link {
+    color: white;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: block;
+}
